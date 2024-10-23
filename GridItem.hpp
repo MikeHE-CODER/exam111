@@ -11,12 +11,12 @@ private:
     static int Griditem_count;
 
 public:
-    GridItem(int x, int y, int width, int height) : GridItem()
+      GridItem(int x, int y, int width, int height) : GridItem()
     {
         this->x = x;
         this->y = y;
-        this->height = height;
         this->width = width;
+        this->height = height;
     };
     GridItem() : x(0), y(0), height(0), width(0) { Griditem_count++; }
     void setCoordinates(int x, int y)
