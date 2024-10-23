@@ -31,8 +31,8 @@ public:
     int getGridHeight() { return height; }
     int getActiveGridItemCount() { return Griditem_count; }
     virtual ~GridItem() { Griditem_count--; }
-    int setGridWidth(int a) { width = a; }
-    int setGridHeight(int a) { height = a; }
+    void setGridWidth(int a) { width = a; }
+    void setGridHeight(int a) { height = a; }
 };
 int GridItem::Griditem_count = 0;
 
