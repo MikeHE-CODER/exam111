@@ -18,7 +18,7 @@ public:
         this->width = width;
         this->height = height;
     };
-    GridItem() : x(0), y(0), height(0), width(0) { Griditem_count++; }
+    GridItem() : x(0), y(0), width(0), height(0) { Griditem_count++; }
     void setCoordinates(int x, int y)
     {
         this->x = x;
