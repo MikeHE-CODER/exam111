@@ -8,11 +8,7 @@ private:
     static int Interactable_count;
 
 public:
-    enum InteractableType
-    {
-        GOAL,
-        EXPERIMENT
-    };
+    
     Interactable() { Interactable_count++; }
     Interactable(int x, int y, int width, int height) : GridItem(x, y, width, height) { Interactable_count++; }
     ~Interactable()
@@ -27,4 +23,9 @@ public:
     int getActiveInteractableCount() { return Interactable_count; }
 };
 int Interactable::Interactable_count = 0;
+enum InteractableType
+    {
+        GOAL,
+        EXPERIMENT
+    };
 #endif
