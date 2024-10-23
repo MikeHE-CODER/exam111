@@ -1,6 +1,8 @@
 #ifndef SCIENTIST_H
 #define SCIENTIST_H
 #include "GridItem.hpp"
+#include "Interactable.hpp"
+
 class Scientist : public GridItem
 {
 private:
